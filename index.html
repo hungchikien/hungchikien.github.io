@@ -16,19 +16,27 @@
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    /* Đổ bóng nhẹ và bo góc mềm mại cho khung card */
-.card {
-    border: none !important;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
+   /* --- Mã ép buộc đổ bóng và bay nổi --- */
+
+/* 1. Đặt thuộc tính cho 3 ô trắng (card) */
+.featured-product .card {
+    border: none !important; /* Xóa viền xám mặc định */
+    border-radius: 12px !important; /* Bo góc mượt */
+    
+    /* Đổ bóng nhẹ mặc định (Bóng này sẽ làm ô trắng nổi lên khỏi nền xám) */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important; 
+    
+    /* Tạo hiệu ứng chuyển động mượt */
+    transition: all 0.3s ease-in-out !important;
 }
 
-/* Hiệu ứng bay nổi lên và bóng đậm hơn khi rê chuột vào (Hover) */
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+/* 2. Hiệu ứng khi rê chuột vào (Hover) */
+.featured-product .card:hover {
+    /* Bay nổi lên cao hơn */
+    transform: translateY(-10px) !important;
+    
+    /* Đổ bóng đậm hơn và rộng hơn */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3) !important;
 }
 <!--
 
@@ -245,7 +253,7 @@ Cung cấp thiết bị chính hãng, dịch vụ bảo trì chuyên nghiệp c�
 
 
     <!-- Start Featured Product -->
-    <section class="bg-light">
+    <section class="bg-light featured-product">
         <div class="container py-5">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
@@ -260,7 +268,7 @@ Miễn phí toàn bộ chi phí bảo trì, thay mực giá rẻ và sửa chữ
             <div class="row">
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
+                        <a href="linksanpham.html">
                             <img src="./assets/img/ricoh-imc-300035004500.jpeg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
@@ -274,7 +282,7 @@ Miễn phí toàn bộ chi phí bảo trì, thay mực giá rẻ và sửa chữ
                                 </li>
                                 <li class="text-muted text-right">1.700.000vnđ/tháng</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Máy photocopy Ricoh IM C2500</a>
+                            <a href="linksanpham.html" class="h2 text-decoration-none text-dark">Máy photocopy Ricoh IM C2500</a>
                             <p class="card-text">
                              <ul>
   <li>Máy Photocopy kỹ thuật số, Laser in màu</li>
@@ -295,7 +303,7 @@ Miễn phí toàn bộ chi phí bảo trì, thay mực giá rẻ và sửa chữ
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
+                        <a href="linksanpham.html">
                             <img src="./assets/img/ricoh MP C2504 may mau.png" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
@@ -309,7 +317,7 @@ Miễn phí toàn bộ chi phí bảo trì, thay mực giá rẻ và sửa chữ
                                 </li>
                                 <li class="text-muted text-right">1.700.000vnđ/tháng</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">RICOH MP C2504 – MÁY MÀU</a>
+                            <a href="linksanpham.html" class="h2 text-decoration-none text-dark">RICOH MP C2504 – MÁY MÀU</a>
                             <p class="card-text">
                               -	Được sử dụng miễn phí 1.000 tờ đen
 -	Được sử dụng miễn phí 100 tờ màu
@@ -323,7 +331,7 @@ Miễn phí toàn bộ chi phí bảo trì, thay mực giá rẻ và sửa chữ
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
+                        <a href="linksanpham.html">
                             <img src="./assets/img/toshiba E2505AC maymau.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
@@ -337,7 +345,7 @@ Miễn phí toàn bộ chi phí bảo trì, thay mực giá rẻ và sửa chữ
                                 </li>
                                 <li class="text-muted text-right">1.700.000vnđ/tháng</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">TOSHIBA E 2505AC MÁY MÀU</a>
+                            <a href="linksanpham.html" class="h2 text-decoration-none text-dark">TOSHIBA E 2505AC MÁY MÀU</a>
                             <p class="card-text">
                                -	Được sử dụng miễn phí 1.000 tờ đen
 -	Được sử dụng miễn phí 100 tờ màu
