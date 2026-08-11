@@ -1,24 +1,15 @@
-/*
-  /* --- Mã ép buộc đổ bóng và bay nổi --- */
+/* --- Mã ép buộc đổ bóng và bay nổi --- */
 
 /* 1. Đặt thuộc tính cho 3 ô trắng (card) */
 .featured-product .card {
-    border: none !important; /* Xóa viền xám mặc định */
-    border-radius: 12px !important; /* Bo góc mượt */
-    
-    /* Đổ bóng nhẹ mặc định (Bóng này sẽ làm ô trắng nổi lên khỏi nền xám) */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important; 
-    
-    /* Tạo hiệu ứng chuyển động mượt */
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
     transition: all 0.3s ease-in-out !important;
 }
 
 /* 2. Hiệu ứng khi rê chuột vào (Hover) */
 .featured-product .card:hover {
-    /* Bay nổi lên cao hơn */
     transform: translateY(-10px) !important;
-    
-    /* Đổ bóng đậm hơn và rộng hơn */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3) !important;
 }
-*/
